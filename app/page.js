@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { CheckCircle2, Package, ShoppingCart, ArrowRight, AlertCircle } from "lucide-react";
+import { CheckCircle2, Package, ShoppingCart, ArrowRight, AlertCircle, Loader2 } from "lucide-react";
 import Logo from "@/components/logo";
 
 export default function Home() {
@@ -266,14 +266,14 @@ export default function Home() {
             <CardContent className="p-8 md:p-12">
               <form className="space-y-6" onSubmit={handleSubmit}>
                 {/* Success Message */}
-                {submitStatus === "success" && (
+                { submitStatus === "success" && (
                   <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4 flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-sm font-medium text-green-800 dark:text-green-200">
+                      <p className="text-sm font-medium text-green-800">
                         Message sent successfully!
                       </p>
-                      <p className="text-sm text-green-700 dark:text-green-300 mt-1">
+                      <p className="text-sm text-green-700  mt-1">
                         We&apos;ll get back to you as soon as possible.
                       </p>
                     </div>
@@ -281,14 +281,14 @@ export default function Home() {
                 )}
 
                 {/* Error Message */}
-                {submitStatus === "error" && (
+                { submitStatus === "error" && (
                   <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4 flex items-start gap-3">
-                    <AlertCircle className="w-5 h-5 text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0" />
+                    <AlertCircle className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-sm font-medium text-red-800 dark:text-red-200">
+                      <p className="text-sm font-medium text-red-800">
                         Failed to send message
                       </p>
-                      <p className="text-sm text-red-700 dark:text-red-300 mt-1">
+                      <p className="text-sm text-red-700 mt-1">
                         {errorMessage}
                       </p>
                     </div>
@@ -357,7 +357,7 @@ export default function Home() {
                   size="lg"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  {isSubmitting ? <Loader2 className="w-4 h-4 animate-spin" /> : "Send Message"}
                 </Button>
               </form>
             </CardContent>
