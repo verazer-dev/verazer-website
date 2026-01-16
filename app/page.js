@@ -408,7 +408,7 @@ export default function Home() {
             <div>
               <h3 className="font-semibold mb-4 text-foreground">Contact Info</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li>Email: dev@verazer.com</li>
+                <li>Email: kushagra@verazer.com</li>
                 {/* <li>Phone: +1 (555) 123-4567</li> */}
                 <li>Address: 4th floor, Century Tower, 45, Shakespeare Sarani, opposite Kala Mandir, Mullick Bazar, Park Street area, Kolkata, West Bengal 700017</li>
               </ul>
