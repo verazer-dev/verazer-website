@@ -85,7 +85,7 @@ export default function Home() {
                 Services
               </a>
               <a
-                href="#about"
+                href="/about"
                 className="text-foreground/70 hover:text-foreground transition-colors"
               >
                 About
@@ -205,14 +205,15 @@ export default function Home() {
                 Empowering Agriculture Through Technology
               </h2>
               <p className="text-lg text-muted-foreground mb-4">
-                We specialize in developing custom software solutions that help
-                agriculture businesses automate and optimize their entire
-                workflow—from production to supply chain to sales. As a subsidiary of Bengal Tea & Fabrics Limited, we bring decades of industry expertise to every solution.
+                Founded in 2025, Verazer Technologies is an early-stage startup (pre-Series B) specializing 
+                in developing custom software solutions that help agriculture businesses automate and optimize 
+                their entire workflow—from production to supply chain to sales. As a subsidiary of Bengal 
+                Tea & Fabrics Limited, we bring decades of industry expertise to every solution.
               </p>
               <p className="text-lg text-muted-foreground mb-4">
-                Our team of experienced developers understands the unique
-                challenges faced by the agriculture industry and creates tailored
-                solutions that drive growth and efficiency.
+                Our team of experienced developers understands the unique challenges faced by the agriculture 
+                industry and creates tailored solutions that drive growth and efficiency. We are committed to 
+                helping agriculture businesses transform through technology.
               </p>
               <ul className="space-y-3 mt-6">
                 <li className="flex items-start">
@@ -389,10 +390,10 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="#about"
+                    href="/about"
                     className="hover:text-foreground transition-colors"
                   >
-                    About
+                    About Us
                   </a>
                 </li>
                 <li>
@@ -406,10 +407,31 @@ export default function Home() {
               </ul>
             </div>
             <div>
+              <h3 className="font-semibold mb-4 text-foreground">Legal</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>
+                  <a
+                    href="/privacy"
+                    className="hover:text-foreground transition-colors"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/terms"
+                    className="hover:text-foreground transition-colors"
+                  >
+                    Terms of Service
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
               <h3 className="font-semibold mb-4 text-foreground">Contact Info</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li>Email: kushagra@verazer.com</li>
-                <li>Address: 4th floor, Century Tower, 45, Shakespeare Sarani, opposite Kala Mandir, Mullick Bazar, Park Street area, Kolkata, West Bengal 700017</li>
+                <li>Address: 4th floor, Century Tower, 45, Shakespeare Sarani, opposite Kala Mandir, Mullick Bazar, Park Street area, Kolkata, West Bengal 700017, India</li>
               </ul>
             </div>
           </div>
