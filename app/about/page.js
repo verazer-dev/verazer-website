@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, Calendar, Building2, Users, Target, TrendingUp } from "lucide-react";
 import Logo from "@/components/logo";
@@ -15,35 +16,35 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <a href="/">
+              <Link href="/">
                 <Logo variant="collapsed" bgColor="transparent" />
-              </a>
+              </Link>
             </div>
             <div className="hidden md:flex space-x-8">
-              <a
+              <Link
                 href="/"
                 className="text-foreground/70 hover:text-foreground transition-colors"
               >
                 Home
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/#services"
                 className="text-foreground/70 hover:text-foreground transition-colors"
               >
                 Services
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/about"
                 className="text-foreground font-medium"
               >
                 About
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/#contact"
                 className="text-foreground/70 hover:text-foreground transition-colors"
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -211,16 +212,16 @@ export default function AboutPage() {
               <h3 className="font-semibold mb-4 text-foreground">Quick Links</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li>
-                  <a href="/" className="hover:text-foreground transition-colors">Home</a>
+                  <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
                 </li>
                 <li>
-                  <a href="/#services" className="hover:text-foreground transition-colors">Services</a>
+                  <Link href="/#services" className="hover:text-foreground transition-colors">Services</Link>
                 </li>
                 <li>
-                  <a href="/about" className="hover:text-foreground transition-colors">About</a>
+                  <Link href="/about" className="hover:text-foreground transition-colors">About</Link>
                 </li>
                 <li>
-                  <a href="/#contact" className="hover:text-foreground transition-colors">Contact</a>
+                  <Link href="/#contact" className="hover:text-foreground transition-colors">Contact</Link>
                 </li>
               </ul>
             </div>
@@ -228,10 +229,10 @@ export default function AboutPage() {
               <h3 className="font-semibold mb-4 text-foreground">Legal</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li>
-                  <a href="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</a>
+                  <Link href="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
                 </li>
                 <li>
-                  <a href="/terms" className="hover:text-foreground transition-colors">Terms of Service</a>
+                  <Link href="/terms" className="hover:text-foreground transition-colors">Terms of Service</Link>
                 </li>
               </ul>
             </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Logo from "@/components/logo";
 
 export const metadata = {
@@ -13,14 +14,14 @@ export default function PrivacyPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <a href="/">
+              <Link href="/">
                 <Logo variant="collapsed" bgColor="transparent" />
-              </a>
+              </Link>
             </div>
             <div className="hidden md:flex space-x-8">
-              <a href="/" className="text-foreground/70 hover:text-foreground transition-colors">Home</a>
-              <a href="/about" className="text-foreground/70 hover:text-foreground transition-colors">About</a>
-              <a href="/#contact" className="text-foreground/70 hover:text-foreground transition-colors">Contact</a>
+              <Link href="/" className="text-foreground/70 hover:text-foreground transition-colors">Home</Link>
+              <Link href="/about" className="text-foreground/70 hover:text-foreground transition-colors">About</Link>
+              <Link href="/#contact" className="text-foreground/70 hover:text-foreground transition-colors">Contact</Link>
             </div>
           </div>
         </div>
@@ -34,7 +35,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl font-semibold text-foreground mb-4">1. Introduction</h2>
             <p className="text-muted-foreground mb-4">
-              Verazer Technologies Ventures Private Limited ("we," "our," or "us") is committed to protecting 
+              Verazer Technologies Ventures Private Limited (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting 
               your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your 
               information when you visit our website or use our services.
             </p>
@@ -108,7 +109,7 @@ export default function PrivacyPage() {
             <h2 className="text-2xl font-semibold text-foreground mb-4">8. Changes to This Policy</h2>
             <p className="text-muted-foreground mb-4">
               We may update this Privacy Policy from time to time. We will notify you of any changes by 
-              posting the new Privacy Policy on this page and updating the "Last updated" date.
+              posting the new Privacy Policy on this page and updating the &quot;Last updated&quot; date.
             </p>
           </section>
 
